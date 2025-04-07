@@ -197,7 +197,8 @@ a{
 @media (max-width: 768px) {
     .wrapper ,
     .settings-page,
-    .projects-page{
+    .projects-page,
+    .courses-page{
         grid-template-columns: minmax(250px , 1fr);
         margin: 0 10px;
     }
@@ -1031,7 +1032,7 @@ a{
 /* End projects page */
 /* Start courses page */
 .courses-page{
-    grid-template-columns: repeat(auto-fill , minmax(280px , 1fr));
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
     margin: 0 20px;
 }
 .courses-page .course{
