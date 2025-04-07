@@ -189,13 +189,15 @@ a{
     background-color: black;
 }
 .wrapper ,
-.settings-page{
+.settings-page,
+.projects-page{
     grid-template-columns: repeat(auto-fill , minmax(450px , 1fr));
     margin: 0 20px;
 }
 @media (max-width: 768px) {
     .wrapper ,
-    .settings-page{
+    .settings-page,
+    .projects-page{
         grid-template-columns: minmax(250px , 1fr);
         margin: 0 10px;
     }
@@ -958,6 +960,75 @@ a{
 }
 /* End other data */
 /* End profile page */
+/* Start projects page */
+.projects-page .project .project-head .deadline{
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+.projects-page .project .project-team{
+    position: relative;
+    min-height: 80px;
+}
+.projects-page .project .project-team a{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.projects-page .project .project-team a:nth-child(2){
+    left: 25px;
+}
+.projects-page .project .project-team a:nth-child(3){
+    left: 50px;
+}
+.projects-page .project .project-team a:nth-child(4){
+    left: 75px;
+}
+.projects-page .project .project-team a:nth-child(5){
+    left: 100px;
+}
+.projects-page .project .project-team a:hover{
+    z-index: 500;
+}
+.projects-page .project .project-team img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.projects-page .project .do{
+    justify-content: flex-end;
+}
+.projects-page .project .do span{
+    margin-left: 5px;
+    width: fit-content;
+}
+.projects-page .project .info .progress-bar{
+    width: 250px;
+    height: 8px;
+    border-radius: 4px;
+}
+.projects-page .project .info .progress-bar span.progress{
+    position: absolute;
+    height: 100%;
+    border-radius: inherit;
+}
+@media (max-width: 768px) {
+    .projects-page .project .do{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .projects-page .project .info{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* End projects page */
 /* Start animation */
 @keyframes flashing {
     0% , 100%{
