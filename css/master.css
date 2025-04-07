@@ -1029,6 +1029,31 @@ a{
     }
 }
 /* End projects page */
+/* Start courses page */
+.courses-page{
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    margin: 0 20px;
+}
+.courses-page .course{
+    overflow: hidden;
+}
+.courses-page .course .course-img .avatar{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: 20px;
+    top: 20px;
+}
+.courses-page .course .course-summary p{
+    line-height: 1.5;
+}
+.courses-page .course .course-info a{
+    margin-top: -50px;
+
+}
+/* End courses page*/
 /* Start animation */
 @keyframes flashing {
     0% , 100%{
