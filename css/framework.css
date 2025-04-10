@@ -148,6 +148,9 @@
 .p-relative{
     position: relative;
 }
+.p-absolute{
+    position: absolute;
+}
 /* End position */
 /* Start text */
 .txt-c{
